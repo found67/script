@@ -75,6 +75,7 @@ local function initializeFastAttack()
         stop = function() if attackLoop then task.cancel(attackLoop); attackLoop = nil end end
     }
 end
+
 local function AutoFruitM1(target)
         if not target or not target:FindFirstChild("Head") then return end
         pcall(function()
